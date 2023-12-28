@@ -1,0 +1,14 @@
+# config
+*.env
+
+# OS
+.DS_Store
+
+# webpack
+bundle.js*
+main.css*
+
+
+# directories
+node_modules/
+coverage
