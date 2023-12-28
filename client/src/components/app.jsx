@@ -2,8 +2,15 @@ import React from 'react';
 
 export default function App(){
   return (
-    <div className="body" role="application">
-      This is a React App
-    </div>
+    <>
+      <h1 className="appHeader">
+        This is a React App
+      </h1>
+      <div className="body" role="application">
+        <div>
+          create app here
+        </div>
+      </div>
+    </>
   )
 }

@@ -8,12 +8,20 @@
 /* --header-font:'Cormorant Garamond', serif; */
 --header-font:'Barlow', sans-serif;
 }
-
+.appHeader {
+  background-color: var(--main-dark);
+  color: var(--light-alt);
+}
 body {
+  background-color: var(--main-light);
   max-width: 1080px;
   margin: 0 auto !important;
   float: none !important;
   font-family: var(--body-font);
   color: var(--main-dark);
-  padding-top: 5rem;
+  padding-top: 1rem;
+}
+.body {
+  display: flex;
+  justify-content: center;
 }
