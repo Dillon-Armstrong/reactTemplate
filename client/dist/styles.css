@@ -1,0 +1,19 @@
+:root{
+--main-light: #9c9da2;
+--main-btn-light: rgba(235, 245, 255, 0.6);
+--main-dark: #0f1010;
+--dark-alt: #064f5f;
+--light-alt:#24f2d3;
+--body-font:'Barlow', sans-serif;
+/* --header-font:'Cormorant Garamond', serif; */
+--header-font:'Barlow', sans-serif;
+}
+
+body {
+  max-width: 1080px;
+  margin: 0 auto !important;
+  float: none !important;
+  font-family: var(--body-font);
+  color: var(--main-dark);
+  padding-top: 5rem;
+}

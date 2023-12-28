@@ -3,6 +3,7 @@ require('dotenv').config();
 const path = require('path');
 
 module.exports = {
+  mode: "development",
   entry: path.join(__dirname, '/client/src/index.jsx'),
   output: {
     filename: 'bundle.js',
@@ -26,20 +27,13 @@ module.exports = {
         },
       },
       {
-        test: /\.?js$/,
-        exclude: /node_modules/,
+        test: /\.(js|jsx)$/,
+        exclude: /nodeModules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           },
-        },
-      },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /nodeModules/,
-        use: {
-          loader: 'babel-loader',
         },
       },
     ],
